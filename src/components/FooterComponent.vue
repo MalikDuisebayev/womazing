@@ -7,12 +7,6 @@
                     <li>Политика конфиденциальности</li>
                     <li>Публичная оферта</li>
                 </ul>
-                <div>
-                    <router-link class="logo" to="/">
-                        <img src="../assets/vector/logo.png" alt="womazin">
-                        <span class="span">Womazing</span>
-                    </router-link>
-                </div>
                 <ul class="d-flex list">
                     <li>
                         <a href="">

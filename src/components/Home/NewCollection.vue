@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <my-button class="btn mt-5">Открыть магазин </my-button>
+                <router-link class="btn mt-5" to="/magazine">Открыть магазин</router-link>
             </div>
 
         </div>
@@ -87,5 +87,10 @@ export default {
     background: white;
     border: 1px solid #6E9C9F;
     color: #6E9C9F;
+    padding: 22px 50px;
+    gap: 10px;
+    width: 243px;
+    height: 68px;
+    white-space: nowrap;
 }
 </style>

@@ -9,16 +9,16 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
-    // {
-    //   path: "/novelty",
-    //   name: "novelty",
-    //   component: () => import("../views/NoveltyView.vue"),
-    // },
-    // {
-    //   path: "/premiers",
-    //   name: "premiers",
-    //   component: () => import("../views/PremiersView.vue"),
-    // },
+    {
+      path: "/about",
+      name: "about",
+      component: () => import("../views/AboutView.vue"),
+    },
+    {
+      path: "/magazine",
+      name: "magazine",
+      component: () => import("../views/MagazineView.vue"),
+    },
   ],
 });
 

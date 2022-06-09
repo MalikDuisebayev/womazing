@@ -1,24 +1,26 @@
 <template>
     <nav class="nav">
         <div class="container">
-            <div class="title">
-                <img class="nav__img" src="../../assets/vector/logo.png" alt="Womazing">
-                <span class="nav__span">Womazing</span>
+            <div class="d-flex justify-content-between w-100">
+                <div class="title">
+                    <img class="nav__img" src="../../assets/vector/logo.png" alt="Womazing">
+                    <span class="nav__span">Womazing</span>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item" v-for="(link, idx) in links" :key="idx">
+                        <router-link class="nav__link" :to="link.url"> {{ link.name }} </router-link>
+                    </li>
+                </ul>
+                <ul class="nav__list">
+                    <li>
+                        <img class="nav__img" src="../../assets/vector/phone.png" alt="phone">
+                        <span class="nav__span phone"><a href="tel:+77073346526">+7(707)3346526</a></span>
+                    </li>
+                    <li>
+                        <router-link to="/car"><img src="../../assets/vector/car.png" alt="car" /></router-link>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav__list">
-                <li class="nav__item" v-for="(link, idx) in links" :key="idx">
-                    <router-link class="nav__link" :to="link.url"> {{ link.name }} </router-link>
-                </li>
-            </ul>
-            <ul class="nav__list">
-                <li>
-                    <img class="nav__img" src="../../assets/vector/phone.png" alt="phone">
-                    <span class="nav__span phone"><a href="tel:+77073346526">+7(707)3346526</a></span>
-                </li>
-                <li>
-                    <router-link to="/car"><img src="../../assets/vector/car.png" alt="car" /></router-link>
-                </li>
-            </ul>
         </div>
     </nav>
 

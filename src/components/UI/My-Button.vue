@@ -18,5 +18,6 @@ export default {
     height: 68px;
     color: white;
     background: #6E9C9F;
+    white-space: nowrap;
 }
 </style>

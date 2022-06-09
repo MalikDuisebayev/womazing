@@ -9,7 +9,7 @@
                     <p class="text">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне.
                         Время
                         исследовать.</p>
-                    <my-button>Открыть магазин</my-button>
+                    <router-link class="btn" to="/magazine">Открыть магазин</router-link>
                 </div>
             </div>
             <div class="header__right">
