@@ -1,0 +1,7 @@
+{
+    "newCollection": [
+    { "url": "https://images.unsplash.com/photo-1441123100240-f9f3f77ed41b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80", "name": "Футболка USA", "price": "$129" },
+    { "url": "https://images.squarespace-cdn.com/content/v1/5f874e5d14ae001a1b6878ae/1607887919356-14Q88OLWD1SKC7Q5MUCJ/christopher-campbell-va0YmkIFtPA-unsplash.jpg", "name": "Купальник Glow", "price": "$129" },
+    { "url": "https://images.unsplash.com/photo-1476817343404-01ccd61218d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&w=1000&q=80", "name": "Свитшот Sweet Shot", "price": "$129" }
+    ]
+}
