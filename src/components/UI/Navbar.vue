@@ -2,10 +2,10 @@
     <nav class="nav">
         <div class="container">
             <div class="d-flex justify-content-between w-100">
-                <div class="title">
+                <router-link to="/" class="title">
                     <img class="nav__img" src="../../assets/vector/logo.png" alt="Womazing">
                     <span class="nav__span">Womazing</span>
-                </div>
+                </router-link>
                 <ul class="nav__list">
                     <li class="nav__item" v-for="(link, idx) in links" :key="idx">
                         <router-link class="nav__link" :to="link.url"> {{ link.name }} </router-link>
@@ -32,7 +32,7 @@ export default {
         return {
             links: [
                 { name: 'Главная', url: '/' },
-                { name: 'Магазин', url: '/magazine/all' },
+                { name: 'Магазин', url: '/magazine' },
                 { name: 'О бренде', url: '/about' },
                 { name: 'Контакты', url: '/contacts' },
             ]

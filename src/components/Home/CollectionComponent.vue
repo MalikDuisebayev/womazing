@@ -4,9 +4,9 @@
             <h2 class="title">
                 Новая коллекция
             </h2>
-
             <div class="collection__inner d-flex justify-content-between">
-                <div v-for="(shop, idx) in collection" :key="idx" class="card" style="width: 398px;">
+                <div @click='$router.push(`/magazine/${shop.id}`)' v-for="(shop, idx) in collection" :key="idx"
+                    class="card" style="width: 398px;">
                     <img :src="shop.url" class="card-img-top" :alt="shop.name">
                     <div class="card-body">
                         <div class="card-text">
@@ -82,6 +82,10 @@ export default {
 
     color: #998E78;
 
+}
+
+.card {
+    cursor: pointer;
 }
 
 .btn {

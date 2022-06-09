@@ -28,7 +28,7 @@
 
                 </div>
                 <div class="d-flex justify-content-center">
-                    <router-link class="btn mt-5" to="/magazine/all">Перейти в магазин</router-link>
+                    <router-link class="btn mt-5" to="/magazine">Перейти в магазин</router-link>
                 </div>
             </div>
         </div>

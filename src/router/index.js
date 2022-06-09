@@ -17,31 +17,20 @@ const router = createRouter({
     {
       path: "/magazine",
       name: "magazine",
+      props: true,
       component: () => import("../views/MagazineView.vue"),
-      children: [
-        {
-          path: "all",
-          component: () => import("../components/Magazine/AllComponent.vue"),
-        },
-        {
-          path: "shirt",
-          component: () => import("../components/Magazine/ShirtComponent.vue"),
-        },
-        {
-          path: "swimwear",
-          component: () =>
-            import("../components/Magazine/SwimwearComponent.vue"),
-        },
-        {
-          path: "dress",
-          component: () => import("../components/Magazine/DressComponent.vue"),
-        },
-        {
-          path: "switshot",
-          component: () =>
-            import("../components/Magazine/SwitshotComponent.vue"),
-        },
-      ],
+    },
+    {
+      path: "/magazine/:id",
+      name: "product",
+      component: () =>
+        import("../components/Magazine/Product/ProductComponent.vue"),
+    },
+    {
+      path: "/contacts",
+      name: "contacts",
+      props: true,
+      component: () => import("../views/ContactsView.vue"),
     },
   ],
 });
