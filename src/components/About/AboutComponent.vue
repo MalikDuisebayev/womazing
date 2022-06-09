@@ -11,24 +11,24 @@
                         <li class="breadcrumb-item active" aria-current="page">О бренде</li>
                     </ol>
                 </nav>
-                <div v-for="(data, idx) in abouts" :key="idx"
+                <div v-for="(item, idx) in data" :key="idx"
                     class="d-flex justify-content-around align-items-center about__inner">
-                    <img style="width: 400px" :src="data.url" :alt="data.subtitle">
+                    <img style="width: 400px" :src="item.url" :alt="item.subtitle">
                     <div style="width:542px">
                         <h3 class="subtitle">
-                            {{ data.subtitle }}
+                            {{ item.subtitle }}
                         </h3>
                         <p>
-                            {{ data.text_1 }}
+                            {{ item.text_1 }}
                         </p>
                         <p>
-                            {{ data.text_2 }}
+                            {{ item.text_2 }}
                         </p>
                     </div>
 
                 </div>
                 <div class="d-flex justify-content-center">
-                    <router-link class="btn mt-5" to="magazine">Перейти в магазин</router-link>
+                    <router-link class="btn mt-5" to="/magazine/all">Перейти в магазин</router-link>
                 </div>
             </div>
         </div>
@@ -37,11 +37,9 @@
 </template>
 
 <script>
-import MyButton from '../UI/My-Button.vue'
 export default {
-    components: { MyButton },
     props: {
-        abouts: {
+        data: {
             type: Array
         }
     }

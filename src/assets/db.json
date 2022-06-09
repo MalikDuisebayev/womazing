@@ -9,7 +9,7 @@
         {"url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80", "subtitle": "Магия в деталях", "text_1": "Первый магазин Womazing был открыт в маленьком городке на севере страны в 2010-ом году. Первая коллекция состояла из двух пальто и костюма, которые были копиями парижских моделей.", "text_2": "Несмотря на то, что по образованию основательница была адвокатом, ее семья всегда была тесно связана с шитьём (прабабушка основательницы шила одежду для женщин, а мать основала профессиональную школу кроя и шитья). Стремление производить одежду для масс несло в себе большие перспективы, особенно в то время, когда высокая мода по-прежнему доминировала, а рынка качественного prêt-a-porter попросту не существовало."}
     ],
     "magazine": [
-        { "url": "https://images.unsplash.com/photo-1441123100240-f9f3f77ed41b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80", "name": "Футболка USA", "price": "$129", "category": "shirt" },
+    { "url": "https://images.unsplash.com/photo-1441123100240-f9f3f77ed41b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80", "name": "Футболка USA", "price": "$129", "category": "shirt" },
     { "url": "https://images.squarespace-cdn.com/content/v1/5f874e5d14ae001a1b6878ae/1607887919356-14Q88OLWD1SKC7Q5MUCJ/christopher-campbell-va0YmkIFtPA-unsplash.jpg", "name": "Купальник Glow", "price": "$129", "category":"swim" },
     { "url": "https://images.unsplash.com/photo-1476817343404-01ccd61218d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&w=1000&q=80", "name": "Свитшот Sweet Shot", "price": "$129", "category":"swit" },
     {"url": "https://images.unsplash.com/photo-1524701208119-e91fc2e4c8e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60", "name": "Футболка QUEEN", "price": "$22" ,"category": "shirt"},
@@ -19,6 +19,7 @@
     {"url": "https://images.unsplash.com/photo-1532675432006-329c6fed7045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60", "name": "Платье Prada", "price": "$400","category": "dress" },
     {"url": "https://images.unsplash.com/photo-1654514434264-2b9bde34e562?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60", "name": "Топик Nike", "price": "$50","category": "shirt" },
     {"url": "https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80", "name": "Майка Adidas", "price": "$50","category": "shirt" },
-    {"url": "https://sun9-east.userapi.com/sun9-25/s/v1/if2/1EoP58UrI1Tg4Okq9pzzEH7kfhzk7Fq7GEa-oQZel2ooac-yFzfO7PyDv--00khg12Qkdyuzg0DdMwKA3itj2JcI.jpg?size=958x1280&quality=95&type=album", "name": "Футболка Abibas", "price": "$1","category": "shirt" }
+    {"url": "https://sun9-east.userapi.com/sun9-25/s/v1/if2/1EoP58UrI1Tg4Okq9pzzEH7kfhzk7Fq7GEa-oQZel2ooac-yFzfO7PyDv--00khg12Qkdyuzg0DdMwKA3itj2JcI.jpg?size=958x1280&quality=95&type=album", "name": "Футболка Abibas", "price": "$1","category": "shirt" },
+    {"url": "https://images.unsplash.com/photo-1628196747585-539c7fb36fc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHdvbWFuJTIwYmlraW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60", "name": "Купальник BERSHKA", "price": "$100","category": "swim" }
     ]
 }

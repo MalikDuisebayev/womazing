@@ -26,10 +26,10 @@
                             <router-link to="/magazine/dress" class="page-link">Платья</router-link>
                         </li>
                         <li class="page-item">
-                            <router-link to="/magazine/swim" class="page-link">Купальник</router-link>
+                            <router-link to="/magazine/swimwear" class="page-link">Купальник</router-link>
                         </li>
                         <li class="page-item">
-                            <router-link to="/magazine/swit" class="page-link">Толстовки</router-link>
+                            <router-link to="/magazine/switshot" class="page-link">Толстовки</router-link>
                         </li>
                     </ul>
                 </nav>
@@ -44,9 +44,7 @@
 </template>
 
 <script>
-import Gallery from './Gallery.vue'
 export default {
-    components: { Gallery },
     props: {
         data: {
             type: Array

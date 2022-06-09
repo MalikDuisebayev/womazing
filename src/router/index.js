@@ -21,23 +21,25 @@ const router = createRouter({
       children: [
         {
           path: "all",
-          component: () => import("../components/Magazine/Gallery.vue"),
+          component: () => import("../components/Magazine/AllComponent.vue"),
         },
         {
           path: "shirt",
-          component: () => import("../components/Magazine/Shirt.vue"),
+          component: () => import("../components/Magazine/ShirtComponent.vue"),
         },
         {
-          path: "swim",
-          component: () => import("../components/Magazine/Swim.vue"),
+          path: "swimwear",
+          component: () =>
+            import("../components/Magazine/SwimwearComponent.vue"),
         },
         {
           path: "dress",
-          component: () => import("../components/Magazine/Dress.vue"),
+          component: () => import("../components/Magazine/DressComponent.vue"),
         },
         {
-          path: "swit",
-          component: () => import("../components/Magazine/Swit.vue"),
+          path: "switshot",
+          component: () =>
+            import("../components/Magazine/SwitshotComponent.vue"),
         },
       ],
     },

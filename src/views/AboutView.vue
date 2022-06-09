@@ -1,32 +1,29 @@
 <template>
     <div>
         <navbar />
-        <about :abouts="abouts" />
+        <about-component :data="data" />
         <footer-component />
-
     </div>
 </template>
 
 <script>
-import About from '../components/About/About.vue'
+import AboutComponent from '../components/About/AboutComponent.vue'
 import Navbar from '../components/UI/Navbar.vue'
-import photo from '../assets/photo.json'
+import db from '../assets/db.json'
 import FooterComponent from '../components/FooterComponent.vue'
 export default {
-    components: { Navbar, About, FooterComponent },
+    components: { Navbar, AboutComponent, FooterComponent },
     data() {
         return {
-            abouts: null
+            data: null
         }
     },
     async created() {
-        this.abouts = photo.about
-        console.log(this.abouts)
+        this.data = db.about
     }
 
 }
 </script>
 
-<style la
-Navbarng="scss" scoped>
+<style  scoped>
 </style>

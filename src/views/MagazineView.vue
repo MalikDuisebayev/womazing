@@ -1,26 +1,25 @@
 <template>
     <div>
         <navbar />
-        <header-component :data="data" />
+        <hat-component :data="data" />
         <footer-component />
     </div>
 </template>
 
 <script>
-import photo from '../assets/photo.json'
+import db from '../assets/db.json'
 import FooterComponent from '../components/FooterComponent.vue'
-import HeaderComponent from '../components/Magazine/HeaderComponent.vue'
+import HatComponent from '../components/Magazine/HatComponent.vue'
 import Navbar from '../components/UI/Navbar.vue'
 export default {
-    components: { FooterComponent, Navbar, HeaderComponent },
+    components: { FooterComponent, Navbar, HatComponent },
     data() {
         return {
             data: null
         }
     },
     async created() {
-        this.data = photo.magazine
-        console.log(this.data)
+        this.data = db.magazine
     },
 
 

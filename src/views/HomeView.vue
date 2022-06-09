@@ -1,31 +1,30 @@
 <template>
     <div>
-        <header-component />
-        <new-collection :collection="newCollection.newCollection" />
-        <pros />
-        <team />
+        <hat-component />
+        <collection-component :collection="newCollection.newCollection" />
+        <criteria-component />
+        <team-component />
         <footer-component />
 
     </div>
 </template>
 
 <script>
-import HeaderComponent from '../components/Home/HeaderComponent.vue'
-import NewCollection from '../components/Home/NewCollection.vue'
-import photo from '../assets/photo.json'
-import Pros from '../components/Home/Pros.vue'
-import Team from '../components/Home/Team.vue'
+import HatComponent from '../components/Home/HatComponent.vue'
+import CollectionComponent from '../components/Home/CollectionComponent.vue'
+import db from '../assets/db.json'
+import CriteriaComponent from '../components/Home/CriteriaComponent.vue'
+import TeamComponent from '../components/Home/TeamComponent.vue'
 import FooterComponent from '../components/FooterComponent.vue'
 export default {
-    components: { HeaderComponent, NewCollection, Pros, Team, FooterComponent },
+    components: { HatComponent, CollectionComponent, CriteriaComponent, TeamComponent, FooterComponent },
     data() {
         return {
             newCollection: null
         }
     },
     async created() {
-        this.newCollection = photo
-        console.log(this.newCollection)
+        this.newCollection = db
     }
 }
 </script>
