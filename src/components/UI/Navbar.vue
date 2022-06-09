@@ -32,7 +32,7 @@ export default {
         return {
             links: [
                 { name: 'Главная', url: '/' },
-                { name: 'Магазин', url: '/magazine' },
+                { name: 'Магазин', url: '/magazine/all' },
                 { name: 'О бренде', url: '/about' },
                 { name: 'Контакты', url: '/contacts' },
             ]

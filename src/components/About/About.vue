@@ -3,6 +3,14 @@
         <div class="container">
             <div>
                 <h2 class="title">О бренде</h2>
+                <nav class="nav-b" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <router-link to="/">Главная</router-link>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">О бренде</li>
+                    </ol>
+                </nav>
                 <div v-for="(data, idx) in abouts" :key="idx"
                     class="d-flex justify-content-around align-items-center about__inner">
                     <img style="width: 400px" :src="data.url" :alt="data.subtitle">
@@ -49,7 +57,7 @@ export default {
     font-size: 40px;
     line-height: 110%;
     /* identical to box height, or 44px */
-    margin-bottom: 80px;
+    margin-bottom: 26px;
     letter-spacing: 0.02em;
     margin-top: 194px;
     color: #000000;
@@ -63,6 +71,19 @@ export default {
     flex-direction: row-reverse;
 }
 
+a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+
 .btn {
     padding: 22px 50px;
     gap: 10px;
@@ -72,5 +93,9 @@ export default {
     color: #6E9C9F;
     background: white;
     white-space: nowrap;
+}
+
+.nav-b {
+    margin-bottom: 80px;
 }
 </style>
