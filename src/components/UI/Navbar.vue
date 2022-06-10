@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav">
+    <div class="nav">
         <div class="container">
             <div class="d-flex justify-content-between w-100">
                 <router-link to="/" class="title">
@@ -21,8 +21,40 @@
                     </li>
                 </ul>
             </div>
+            <!-- <nav class="navbar navbar-expand-lg bg-light w-100">
+                <div class="container d-flex justify-content-between">
+                    <router-link to="/" class="title">
+                        <img class="nav__img" src="../../assets/vector/logo.png" alt="Womazing">
+                        <span class="nav__span">Womazing</span>
+                    </router-link>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav__item" v-for="(link, idx) in links" :key="idx">
+                                <router-link class="nav__link" :to="link.url"> {{ link.name }} </router-link>
+                            </li>
+
+                        </ul>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <img class="nav__img" src="../../assets/vector/phone.png" alt="phone">
+                                <span class="nav__span phone"><a href="tel:+77073346526">+7(707)3346526</a></span>
+                            </li>
+                            <li class="nav__item">
+                                <router-link to="/car"><img src="../../assets/vector/car.png" alt="car" /></router-link>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav> -->
         </div>
-    </nav>
+    </div>
 
 </template>
 

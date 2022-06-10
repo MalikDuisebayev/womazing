@@ -32,6 +32,21 @@ const router = createRouter({
       props: true,
       component: () => import("../views/ContactsView.vue"),
     },
+    {
+      path: "/car",
+      name: "car",
+      component: () => import("../views/CarView.vue"),
+    },
+    {
+      path: "/order",
+      name: "order",
+      component: () => import("../views/OrderView.vue"),
+    },
+    {
+      path: "/issued",
+      name: "issued",
+      component: () => import("../components/Order/IssuedComponent.vue"),
+    },
   ],
 });
 

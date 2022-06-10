@@ -40,10 +40,10 @@
                         <input v-model="color" value="Желтый" type="radio" class="btn-check" name="btnradio5"
                             id="btnradio5" autocomplete="off" checked>
                         <label class="btn btn-outline-warning rounded-circle circle" for="btnradio5"></label>
-                        <input v-model="color" value="Красный" type="radio" class="btn-check" name="btnradio6"
+                        <input v-model="color" value="Зеленый" type="radio" class="btn-check" name="btnradio6"
                             id="btnradio6" autocomplete="off">
                         <label class="btn btn-outline-success rounded-circle circle" for="btnradio6"></label>
-                        <input v-model="color" value="Зеленый" type="radio" class="btn-check" name="btnradio6"
+                        <input v-model="color" value="Красный" type="radio" class="btn-check" name="btnradio6"
                             id="btnradio7" autocomplete="off">
                         <label class="btn btn-outline-danger rounded-circle circle" for="btnradio7"></label>
                         <input v-model="color" value="Бежевый" type="radio" class="btn-check" name="btnradio7"
@@ -53,7 +53,7 @@
 
                     <div class="d-flex mt-5 car">
                         <input v-model="amount" type="text" class="form-control inputCol text-center">
-                        <my-button>Добавить в корзину</my-button>
+                        <my-button @click="addProduct">Добавить в корзину</my-button>
                     </div>
                 </div>
 
@@ -90,6 +90,22 @@ export default {
     updated() {
         console.log(this.size)
         console.log(this.color)
+    },
+    methods: {
+        addProduct() {
+            if (this.amount == 0) {
+                return alert('Кoличество не может быть равным 0')
+            }
+            const obj = {
+                amount: this.amount,
+                size: this.size,
+                color: this.color
+            }
+            this.$store.state.products.push({ ...this.data, ...obj })
+            alert(`${this.data.name} в корзине!`)
+
+
+        }
     },
 
 }
